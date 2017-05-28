@@ -12,4 +12,54 @@
 
 # Python implementation
 
-The script provided at this repository is a simple implementation of the game in Python.
+The script provided in this repository is a simple implementation of the game in Python.
+
+
+# How to run
+
+As you can see in the help of the script:
+
+    $ ./gameoflife.py -h
+    usage: gameoflife.py [-h] [-s int] [-g int] [-t int]
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -s int, --size int    Size of the grid
+      -g int, --generations    int Amount of generations
+      -t int, --time int    Time between generations (in seconds)
+      
+You can run the script passing the size of the grid, the amount of generations and the time between generations. 
+
+    $ ./gameoflife.py -s 8 -g 10  # 8x8 grid, with 10 generations.
+    
+    Initial generation
+    [1, 1, 0, 0, 0, 0, 0, 0]
+    [1, 1, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 1, 1, 0, 1]
+    [1, 1, 1, 1, 0, 1, 0, 1]
+    [1, 1, 1, 0, 1, 1, 1, 0]
+    [1, 1, 0, 1, 1, 0, 1, 0]
+    [0, 1, 0, 1, 1, 0, 0, 1]
+    [0, 0, 0, 0, 0, 1, 0, 1]
+    
+    
+    Generation 1
+    [1, 1, 0, 0, 0, 0, 0, 0]
+    [1, 1, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 1, 1, 1, 0, 0]
+    [1, 0, 0, 0, 0, 0, 0, 1]
+    [0, 0, 0, 0, 0, 0, 0, 1]
+    [0, 0, 0, 0, 0, 0, 1, 1]
+    [1, 1, 0, 1, 0, 0, 0, 1]
+    [0, 0, 0, 0, 1, 0, 1, 0]
+    
+    Generation 2
+    [1, 1, 0, 0, 0, 0, 0, 0]
+    [1, 1, 1, 0, 1, 0, 0, 0]
+    [1, 1, 0, 0, 1, 0, 0, 0]
+    [0, 0, 0, 0, 1, 0, 1, 0]
+    [0, 0, 0, 0, 0, 0, 0, 1]
+    [0, 0, 0, 0, 0, 0, 1, 1]
+    [0, 0, 0, 0, 0, 1, 0, 1]
+    [0, 0, 0, 0, 0, 0, 0, 0]
+    ...
